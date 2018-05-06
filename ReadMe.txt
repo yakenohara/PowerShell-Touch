@@ -1,8 +1,8 @@
-���C���X�g�[�����@
+■インストール方法
 
-1. �uTouch.bat�v�ƁuTouch.ps1�v���D���ȏꏊ�ɔz�u����B��2�t�@�C���͓����f�B���N�g���ɂ���
+1. 「Touch.bat」と「Touch.ps1」を好きな場所に配置する。※2つファイルは同じディレクトリにする
 
-2. �uTouch.bat�v�̃V���[�g�J�b�g���쐬���A�uSendTo�v�ɔz�u����
+2. 「Touch.bat」のショートカットを作成し、「SendTo」に配置する
 
-���uSendTo�v�͈ȉ��ɂ���
+※「SendTo」は以下にある
 C:\Users\<UserName>\AppData\Roaming\Microsoft\Windows\SendTo
