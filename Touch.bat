@@ -14,13 +14,7 @@ for %%f in (%*) do (
 )
 
 ::Call powershell
-powershell "& \"%ps1FileFullPath%\"%param%"
-
-::エラーチェック
-if %ERRORLEVEL% == 1 (
-  echo.
-  pause
-)
+powershell "& \"%ps1FileFullPath%\" /r%param%"
 
 exit /b
 
