@@ -34,7 +34,7 @@ Next
 'コマンド生成
 cmdStr = "powershell -ExecutionPolicy Unrestricted " & _
          """& \"""& FSObj.getParentFolderName(WScript.ScriptFullName) & "\" & ps1FileName & "\""" & _
-         " /r" & paramStr & """"
+         " /r /p" & paramStr & """"
 
 if isDebug Then 'デバッグモードの場合
 
@@ -60,7 +60,7 @@ if isDebug Then 'デバッグモードの場合
     
     WScript.Echo msg
     
-Else 'デバッグモード出ない場合
+Else 'デバッグモードでない場合
     
     'runメソッドでps1を実行して標準出力を得る
     WSObj.Run cmdStr
