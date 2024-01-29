@@ -32,7 +32,7 @@ For Each arg In WScript.Arguments
 Next
 
 'コマンド生成
-cmdStr = "powershell -ExecutionPolicy Unrestricted " & _
+cmdStr = "powershell -Bypass Unrestricted " & _
          """& \"""& FSObj.getParentFolderName(WScript.ScriptFullName) & "\" & ps1FileName & "\""" & _
          " /r /p" & paramStr & """"
 
